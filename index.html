@@ -11,43 +11,29 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
+		<link rel="stylesheet" href="style.css">
 		<title>Frontend Mentor | Interactive rating component</title>
 
-		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<!-- Rating state start -->
 		<article class="card-1">
-			<picture>
+			<picture class="card--star">
 				<img src="./images/icon-star.svg" alt="" srcset="" />
 			</picture>
-
 			<h1>How did we do?</h1>
-
 			<p>
 				Please let us know how we did with your support request. All
 				feedback is appreciated to help us improve our offering!
 			</p>
-
-			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
+			<ul class="card-1__list">
+				<li class="item1"><a href="#">1</a></li>
+				<li class="item2"><a href="#">2</a></li>
+				<li class="item3"><a href="#">3</a></li>
+				<li class="item4"><a href="#">4</a></li>
+				<li class="item5"><a href="#">5</a></li>
 			</ul>
-
-			<button>Submit</button>
+			<a href="#">Submit</a>
 		</article>
 
 		<!-- Rating state end -->
@@ -86,4 +72,5 @@
 			>. Coded by <a href="#">Your Name Here</a>.
 		</div>
 	</body>
+	<script src="app.js"></script>
 </html>
