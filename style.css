@@ -54,16 +54,21 @@ body{
 }
 h1{
     color:var(--font-color-1);
+    padding: 1em 0;
 }
 p{
     color: var(--font-color-2);
+    padding-bottom: 1em;
+}
+a{
+    color: white;
 }
 .card-1{
     border: 1px solid red;
-    max-width: 40%;
+    width: max(25rem);
     background-color: var(--background-2);
-    padding: 2rem;
     margin-bottom: 2rem;
+    padding: 2rem;
 }
 .card--star {
 border: 2px solid white;
@@ -71,9 +76,27 @@ padding: 1rem;
 border-radius: 50%;
 }
 
-.card-1__list li{
-    float: left;
-    padding: 2em;
+.card--star img{
+    padding-left: 0.5em;
+}
+
+.item {
+    border: 1px solid white;
+    width: 10%;
+    padding: 1em;
+}
+
+.item-list{
+    padding-bottom: 1rem;
+}
+
+.btn{
+    max-width: max-content;
+}
+.btn a{
+    border: 1px solid white;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .card-2{
@@ -82,4 +105,8 @@ border-radius: 50%;
     background-color: var(--background-2);
     padding: 2rem;
     margin-bottom: 2rem;
+}
+
+.card--phone img{
+    margin: 0 auto;
 }
