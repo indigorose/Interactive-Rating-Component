@@ -33,80 +33,83 @@ The designs were created to the following widths:
 - Weights: 400, 700 */
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
 * {
-    box-sizing: border-box;
-    margin:0;
+	box-sizing: border-box;
+	margin: 0;
 }
 :root {
-    --font-color-1: hsl(0, 0%, 100%);
-    --font-color-2: hsl(216, 12%, 54%); 
-    --font-color-3: hsl(25, 97%, 53%); 
-    --background-1: hsl(216, 12%, 8%);
-    --background-2: hsl(213, 19%, 18%);
-    --background-3: hsl(216, 12%, 54%);
-    --accent-1: hsl(25, 97%, 53%);
-    --accent-2: hsl(217, 12%, 63%);
-    --accent-3: hsl(0, 0%, 100%);
+	--font-color-1: hsl(0, 0%, 100%);
+	--font-color-2: hsl(216, 12%, 54%);
+	--font-color-3: hsl(25, 97%, 53%);
+	--background-1: hsl(216, 12%, 8%);
+	--background-2: hsl(213, 19%, 18%);
+	--background-3: hsl(216, 12%, 54%);
+	--accent-1: hsl(25, 97%, 53%);
+	--accent-2: hsl(217, 12%, 63%);
+	--accent-3: hsl(0, 0%, 100%);
 }
 
-body{
-    font-family: 'Overpass', sans-serif;
-    font-size: 15px;
+body {
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
 }
-h1{
-    color:var(--font-color-1);
-    padding: 1em 0;
+h1 {
+	color: var(--font-color-1);
+	padding: 1em 0;
 }
-p{
-    color: var(--font-color-2);
-    padding-bottom: 1em;
+p {
+	color: var(--font-color-2);
+	padding-bottom: 1em;
 }
-a{
-    color: white;
+a {
+	color: white;
 }
-.card-1{
-    border: 1px solid red;
-    width: max(25rem);
-    background-color: var(--background-2);
-    margin-bottom: 2rem;
-    padding: 2rem;
-}
-.card--star {
-border: 2px solid white;
-padding: 1rem;
-border-radius: 50%;
-}
-
-.card--star img{
-    padding-left: 0.5em;
+.card-1 {
+	border: 1px solid red;
+	width: max(25rem);
+	background-color: var(--background-2);
+	margin-bottom: 2rem;
+	padding: 2rem;
 }
 
 .item {
-    border: 1px solid white;
-    width: 10%;
-    padding: 1em;
+	border: 1px solid white;
+	width: 10%;
+	padding: 1em;
 }
 
-.item-list{
-    padding-bottom: 1rem;
+.item-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-bottom: 1rem;
 }
 
-.btn{
-    max-width: max-content;
+.btn {
+	max-width: max-content;
 }
-.btn a{
-    border: 1px solid white;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.card-2{
-    border: 5px solid rgb(242, 255, 0);
-    max-width: 40%;
-    background-color: var(--background-2);
-    padding: 2rem;
-    margin-bottom: 2rem;
+.btn a {
+	border: 1px solid white;
+	max-width: 80%;
+	margin: 0 auto;
 }
 
-.card--phone img{
-    margin: 0 auto;
+.card-2 {
+	border: 5px solid rgb(242, 255, 0);
+	max-width: 40%;
+	background-color: var(--background-2);
+	padding: 2rem;
+	margin-bottom: 2rem;
 }
+
+.card--phone img {
+	margin: 0 auto;
+}
+
+/* center in a grid
+
+display: grid
+place-content: center 
+
+https://www.youtube.com/watch?v=KqFAs5d3Yl8
+
+*/
