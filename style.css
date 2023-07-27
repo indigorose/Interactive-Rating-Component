@@ -42,7 +42,8 @@ The designs were created to the following widths:
 	--font-color-3: hsl(25, 97%, 53%);
 	--background-1: hsl(216, 12%, 8%);
 	--background-2: hsl(213, 19%, 18%);
-	--background-3: hsl(216, 12%, 54%);
+	--background-3: hsl(213, 15%, 24%);
+	--background-4: hsl(216, 12%, 54%);
 	--accent-1: hsl(25, 97%, 53%);
 	--accent-2: hsl(217, 12%, 63%);
 	--accent-3: hsl(0, 0%, 100%);
@@ -51,49 +52,94 @@ The designs were created to the following widths:
 body {
 	font-family: 'Overpass', sans-serif;
 	font-size: 15px;
+	background-color: var(--background-1);
 }
 h1 {
 	color: var(--font-color-1);
-	padding: 1em 0;
+	padding: 0.7em 0;
 }
 p {
 	color: var(--font-color-2);
 	padding-bottom: 1em;
+	font-size: 0.8rem;
 }
 a {
 	color: white;
+	text-decoration: none;
 }
-.card-1 {
-	border: 1px solid red;
-	width: max(25rem);
-	background-color: var(--background-2);
-	margin-bottom: 2rem;
-	padding: 2rem;
+button {
+	cursor: pointer;
+}
+.attribution {
+	color: white;
 }
 
-.item {
-	border: 1px solid white;
-	width: 10%;
-	padding: 1em;
+.card-1 {
+	border: 1px solid rgb(255, 255, 255);
+	width: max(20rem);
+	background-color: var(--background-2);
+	margin: 15rem auto;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5%;
+}
+
+.card--star {
+	/* border: 1px solid white; */
+	max-width: fit-content;
+	border-radius: 70%;
+	padding: 0.8rem;
+	background-color: var(--background-3);
+	display: grid;
+	place-content: center;
 }
 
 .item-list {
+	/* border: 1px solid white; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-bottom: 1rem;
+	padding-bottom: 1.5em;
+}
+
+.num-btn {
+	border: 1px solid var(--background-3);
+	padding: 1em;
+	border-radius: 70%;
+	height: 2.5rem;
+	width: 2.5rem;
+	text-align: center;
+	background-color: var(--background-3);
+	color: var(--font-color-2);
+	line-height: 0.8em;
+	transition: 0.3s;
+}
+
+.num-btn:hover {
+	background-color: var(--background-4);
+	color: var(--font-color-1);
 }
 
 .btn {
-	max-width: max-content;
-}
-.btn a {
-	border: 1px solid white;
-	max-width: 80%;
+	/* border: 1px solid white; */
+	border-radius: 40px;
+	width: 100%;
+	padding: 0.8em 1em;
 	margin: 0 auto;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: var(--accent-1);
+	color: var(--font-color-1);
+}
+
+.btn:hover {
+	background-color: var(--accent-3);
+	color: var(--accent-1);
 }
 
 .card-2 {
+	display: none;
 	border: 5px solid rgb(242, 255, 0);
 	max-width: 40%;
 	background-color: var(--background-2);
