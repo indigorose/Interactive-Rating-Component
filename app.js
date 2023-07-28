@@ -1,13 +1,26 @@
-const numBtn = document.querySelector('.num-btn');
+const numberButtons = document.querySelectorAll('.num-btn');
+const card1 = document.querySelector('.card-1');
+const card2 = document.querySelector('.card-2');
+const submitButton = document.getElementById('sub-btn');
 
-const buttonValue = document.getElementById('btn1');
+let value = 0;
 
-let value = buttonValue.value;
-console.log(value);
+// Toggle number buttons with style changes
+function selectButton() {
+	numberButtons.forEach((button) => button.classList.remove('selected'));
+	this.classList.add('selected');
+	// Obtain value of button to insert into the second card.
+	value = this.value;
+	console.log(value);
+}
 
-numBtn.addEventListener('click', () => {
-	numBtn.style.backgroundColor = 'orange';
-	numBtn.style.color = 'white';
+// Event listener for each button to change color.
+numberButtons.forEach((button) => {
+	button.addEventListener('click', selectButton);
 });
 
-// TODO - toggle style with buttons
+// Change card on submit button
+
+function changeCard() {
+	console.log(card1.style.display);
+}

@@ -75,7 +75,7 @@ button {
 }
 
 .card-1 {
-	border: 1px solid rgb(255, 255, 255);
+	border: 1px solid var(--background-2);
 	width: max(20rem);
 	background-color: var(--background-2);
 	margin: 15rem auto;
@@ -121,8 +121,13 @@ button {
 	color: var(--font-color-1);
 }
 
+.num-btn.selected {
+	background-color: var(--accent-1);
+	color: var(--font-color-1);
+}
+
 .btn {
-	/* border: 1px solid white; */
+	border: 1px solid var(--accent-1);
 	border-radius: 40px;
 	width: 100%;
 	padding: 0.8em 1em;
@@ -131,15 +136,18 @@ button {
 	letter-spacing: 1px;
 	background-color: var(--accent-1);
 	color: var(--font-color-1);
+	transition: 0.3s;
 }
 
 .btn:hover {
+	border: var(--accent-3);
 	background-color: var(--accent-3);
 	color: var(--accent-1);
 }
 
 .card-2 {
 	display: none;
+	flex-direction: column;
 	border: 5px solid rgb(242, 255, 0);
 	max-width: 40%;
 	background-color: var(--background-2);

@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<!-- Rating state start -->
-		<article class="card-1">
+		<article class="card-1" id="card-1">
 			<div class="card--star">
 				<!-- update to svg tag -->
 				<svg
@@ -41,21 +41,29 @@
 			<div class="item-list">
 				<!-- float horizontal grid -->
 				<button class="num-btn" id="btn1" value="1">1</button>
-				<button class="num-btn" id="btn" value="2">2</button>
-				<button class="num-btn" id="btn" value="3">3</button>
-				<button class="num-btn" id="btn" value="4">4</button>
-				<button class="num-btn" id="btn" value="5">5</button>
+				<button class="num-btn" id="btn2" value="2">2</button>
+				<button class="num-btn" id="btn3" value="3">3</button>
+				<button class="num-btn" id="btn4" value="4">4</button>
+				<button class="num-btn" id="btn5" value="5">5</button>
 			</div>
-			<button type="button" class="btn" id="sub-btn">SUBMIT</button>
+			<button
+				type="button"
+				class="btn"
+				id="sub-btn"
+				onclick="changeCard()"
+			>
+				SUBMIT
+			</button>
 		</article>
 
 		<!-- Rating state end -->
 
 		<!-- Thank you state start -->
 
-		<article class="card-2">
+		<article class="card-2" id="card-2">
 			<picture class="card--phone">
 				<svg
+					class="phone-pic"
 					width="162"
 					height="108"
 					xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +159,7 @@
 			</picture>
 			<p>
 				You selected
-				<!-- Add rating here -->
+				<span id="result"></span>
 				out of 5
 			</p>
 			<h1>Thank you!</h1>
