@@ -35,7 +35,9 @@ The designs were created to the following widths:
 * {
 	box-sizing: border-box;
 	margin: 0;
+	padding: 0;
 }
+
 :root {
 	--font-color-1: hsl(0, 0%, 100%);
 	--font-color-2: hsl(216, 12%, 54%);
@@ -57,6 +59,8 @@ body {
 h1 {
 	color: var(--font-color-1);
 	padding: 0.7em 0;
+	font-weight: 400;
+	font-size: 1.5rem;
 }
 p {
 	color: var(--font-color-2);
@@ -74,7 +78,9 @@ button {
 	color: white;
 }
 
-.card-1 {
+/* Common card styling and functionality */
+.card-1,
+.card-2 {
 	border: 1px solid var(--background-2);
 	width: max(20rem);
 	background-color: var(--background-2);
@@ -85,6 +91,7 @@ button {
 	border-radius: 5%;
 }
 
+/* card-1 styling */
 .card--star {
 	/* border: 1px solid white; */
 	max-width: fit-content;
@@ -145,18 +152,30 @@ button {
 	color: var(--accent-1);
 }
 
-.card-2 {
-	display: none;
-	flex-direction: column;
-	border: 5px solid rgb(242, 255, 0);
-	max-width: 40%;
-	background-color: var(--background-2);
-	padding: 2rem;
-	margin-bottom: 2rem;
+/* card-2 styling */
+
+.card--phone {
+	/* border: 1px solid white; */
+	margin: 0 auto;
+	padding-bottom: 0.5em;
 }
 
-.card--phone img {
-	margin: 0 auto;
+.result {
+	border: 1px solid var(--background-3);
+	border-radius: 40px;
+	width: fit-content;
+	margin: 0.4em auto;
+	text-align: center;
+	font-size: 1rem;
+	padding: 0.4em 0.8em;
+	background-color: var(--background-3);
+	color: var(--accent-1);
+}
+
+.card-2 > h1,
+.card-text {
+	text-align: center;
+	padding: 0.6em 0.6em;
 }
 
 /* center in a grid

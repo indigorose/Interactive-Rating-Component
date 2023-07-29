@@ -12,6 +12,7 @@ function selectButton() {
 	// Obtain value of button to insert into the second card.
 	value = this.value;
 	console.log(value);
+	document.getElementById('value').innerHTML = value;
 }
 
 // Event listener for each button to change color.
@@ -21,6 +22,5 @@ numberButtons.forEach((button) => {
 
 // Change card on submit button
 
-function changeCard() {
-	console.log(card1.style.display);
-}
+function changeCard() {}
+console.log('hello world');
