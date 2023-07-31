@@ -128,6 +128,7 @@ button {
 	max-width: fit-content;
 	border-radius: 70%;
 	padding: 0.8rem;
+	margin-right: 14em;
 	background-color: var(--background-3);
 	display: grid;
 	place-content: center;
