@@ -1,6 +1,7 @@
 const numberButtons = document.querySelectorAll('.num-btn');
 const card1 = document.querySelector('.card-1');
 const card2 = document.querySelector('.card-2');
+const card = document.querySelector('.container');
 const submitButton = document.getElementById('sub-btn');
 
 let value = 0;
@@ -22,5 +23,6 @@ numberButtons.forEach((button) => {
 
 // Change card on submit button
 
-function changeCard() {}
-console.log('hello world');
+submitButton.addEventListener('click', function () {
+	card.classList.toggle('is-flipped');
+});
