@@ -23,9 +23,11 @@ numberButtons.forEach((button) => {
 });
 
 // Change card on submit button
-
 submitButton.addEventListener('click', function () {
 	card.classList.toggle('is-flipped');
 });
 
 // Change button back
+backButton.addEventListener('click', function () {
+	card.classList.remove('is-flipped');
+});
