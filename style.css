@@ -32,7 +32,7 @@ h1 {
 p {
 	color: var(--font-color-2);
 	padding-bottom: 1em;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 a {
 	color: white;
@@ -49,12 +49,10 @@ button {
 /* Common card styling and functionality */
 .container {
 	margin: 3rem auto;
-
 	position: relative;
 	transform-style: preserve-3d;
 	transform-origin: center right;
 	transition: all 0.5s;
-
 	width: 20rem;
 	height: 22rem;
 }
@@ -63,7 +61,6 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -184,5 +181,8 @@ button {
 }
 
 @media (min-width: 750px) {
-	/* TODO - Fix larger screen sizing */
+	.container {
+		max-width: 30em;
+		height: 22rem;
+	}
 }
