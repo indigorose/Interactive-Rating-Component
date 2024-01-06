@@ -46,6 +46,11 @@ button {
 	color: white;
 }
 
+.header-title {
+	font-weight: 700;
+	padding-left: 0.5em;
+}
+
 /* Common card styling and functionality */
 .container {
 	margin: 3rem auto;
